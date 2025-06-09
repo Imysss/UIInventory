@@ -28,4 +28,28 @@ public class Character : MonoBehaviour
       currentHp = characterData.hp;
       currentCritical = characterData.critical;
    }
+
+   public void AddExp(int amount)
+   {
+      exp += amount;
+      TryLevelUp();
+   }
+
+   private void TryLevelUp()
+   {
+      while (exp >= GetRequiredExp(level))
+      {
+         exp -= GetRequiredExp(level);
+         level++;
+      }
+   }
+
+   public int GetRequiredExp(int level)
+   {
+      while (level < 1 || level >= Define.expTable.Length)
+         return Define.expTable[Define.expTable.Length - 1];
+
+      return Define.expTable[level];
+   }
+   
 }

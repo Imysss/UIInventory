@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Yeseul
   m_EditorClassIdentifier: 
   characterName: Yeseul
-  level: 999
+  level: 99
   exp: 0
   description: "\uC9C0\uC0C1 \uCD5C\uAC15\uC758 \uD50C\uB808\uC774\uC5B4 \uC784\uC608\uC2AC\uC785\uB2C8\uB2E4.\t\t"
   atk: 99999

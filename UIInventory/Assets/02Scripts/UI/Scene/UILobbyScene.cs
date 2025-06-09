@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UILobbyScene : UIScene
 {
@@ -29,11 +30,14 @@ public class UILobbyScene : UIScene
         PlayerImage
     }
 
+    private CharacterData data;
+
     public override bool Init()
     {
         if (base.Init() == false)
             return false;
-        Debug.Log("LobbyScene Init");
+
+        data = Managers.Game.Character.characterData;
         
         BindObject(typeof(GameObjects));
         BindButton(typeof(Buttons));
@@ -50,8 +54,13 @@ public class UILobbyScene : UIScene
 
     private void RefreshUI()
     {
-        //GetText((int)Texts.GoldText).text = Managers.Game.Character.Gold.ToString();
-        //GetText((int)Texts.ExpText).text =
+        GetText((int)Texts.NameText).text = data.characterName;
+        GetText((int)Texts.LevelText).text = $"Lv. {data.level}";
+        GetText((int)Texts.DescriptionText).text = data.description;
+        GetText((int)Texts.GoldText).text = Managers.Game.Gold.ToString();
+        GetText((int)Texts.ExpText).text = $"{data.exp} / {Managers.Game.Character.GetRequiredExp(data.level)}";
+        GetObject((int)GameObjects.ExpSlider).GetComponent<Slider>().value =
+            (float)data.exp / Managers.Game.Character.GetRequiredExp(data.level);
     }
 
     private void OnClickStatusButton()
