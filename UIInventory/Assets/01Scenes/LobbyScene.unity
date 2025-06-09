@@ -439,9 +439,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b24aaa975f665a46b905dc105465b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ItemDatas: []
   characterData: {fileID: 11400000, guid: bb53875b6259d514ea147b9444457a55, type: 2}
   inventory:
-    items: []
+    items:
+    - itemData: {fileID: 11400000, guid: 5dc70dfbca076544fb9bfd10fcefadc0, type: 2}
+      quantity: 1
+      isEquipped: 0
+    - itemData: {fileID: 11400000, guid: 2921a259ebd4a5742a8fa74bdca622bc, type: 2}
+      quantity: 1
+      isEquipped: 0
+    - itemData: {fileID: 11400000, guid: c92c034f5f737b24c810b16270e7c037, type: 2}
+      quantity: 1
+      isEquipped: 0
   level: 0
   exp: 0
   currentAtk: 0

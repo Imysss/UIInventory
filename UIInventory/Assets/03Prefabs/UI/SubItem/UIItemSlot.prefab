@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 3549246668345104027}
   - component: {fileID: 1656071228388724811}
   m_Layer: 5
-  m_Name: EquipImage
+  m_Name: EquipObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 3063925335812787703}
   - component: {fileID: 4969461612153609359}
   - component: {fileID: 5054059297473942113}
+  - component: {fileID: 3146773444124414430}
   m_Layer: 5
   m_Name: UIItemSlot
   m_TagString: Untagged
@@ -228,6 +229,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 5
+--- !u!114 &3146773444124414430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833008313602996794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b546cc8ee44b0240b0496ae58e69858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8682276797338872134
 GameObject:
   m_ObjectHideFlags: 0

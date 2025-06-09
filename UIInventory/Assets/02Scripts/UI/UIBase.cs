@@ -20,7 +20,7 @@ public class UIBase : MonoBehaviour
         return true;
     }
 
-    private void Start()
+    private void Awake()
     {
         Init();
     }

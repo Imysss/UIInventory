@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Ring
   m_EditorClassIdentifier: 
   id: 10
+  itemType: 1
   itemName: Ring
   icon: {fileID: 21300000, guid: 82a06efe2d9883d4f9807bba9608ebba, type: 3}
   description: "\uB9C8\uBC95\uC0AC\uC758 \uBC18\uC9C0"

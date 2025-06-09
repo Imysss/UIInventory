@@ -42,6 +42,12 @@ public class UIInventoryPopup : UIPopup
         GetObject((int)GameObjects.InventoryScrollObject).DestroyChilds();
         
         //데이터 받아와서 인벤토리 추가하기
+        foreach (InventoryItem data in Managers.Game.Character.inventory.items)
+        {
+            UIItemSlot item =
+                Managers.UI.MakeSubItem<UIItemSlot>(GetObject((int)GameObjects.InventoryScrollObject).transform);
+            item.SetInfo(data);
+        }
     }
 
     private void OnClickExitButton()

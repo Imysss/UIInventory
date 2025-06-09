@@ -21,7 +21,13 @@ public static class Define
         TitleScene,
         LobbyScene,
         GameScene,
-    }    
+    }
+
+    public enum ItemType
+    {
+        Consumable,
+        Equipable,
+    }
     
     public static int[] expTable = new int[]
     {
