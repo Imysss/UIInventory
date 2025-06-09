@@ -79,6 +79,7 @@ public class UIBase : MonoBehaviour
         Define.UIEvent type = Define.UIEvent.Click)
     {
         UIEventHandler evt = Util.GetOrAddComponent<UIEventHandler>(go);
+
         switch (type)
         {
             case Define.UIEvent.Click:

@@ -120,7 +120,7 @@ public class UIManager
     {
         if (string.IsNullOrEmpty(name))
             name = typeof(T).Name;
-
+        
         GameObject go = Managers.Resource.Instantiate(name);
         go.transform.SetParent(Root.transform);
 

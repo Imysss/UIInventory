@@ -30,7 +30,7 @@ public class ResourceManager
     
     public GameObject Instantiate(string key, Transform parent = null, bool pooling = false)
     {
-        GameObject prefab = Load <GameObject>($"{key}");
+        GameObject prefab = Load<GameObject>($"{key}");
         if (prefab == null)
         {
             Debug.Log($"Failed to load prefab {key}");

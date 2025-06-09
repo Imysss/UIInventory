@@ -31,6 +31,9 @@ public class UILobbyScene : UIScene
 
     public override bool Init()
     {
+        if (base.Init() == false)
+            return false;
+        
         BindObject(typeof(GameObjects));
         BindButton(typeof(Buttons));
         BindText(typeof(Texts));
@@ -46,17 +49,19 @@ public class UILobbyScene : UIScene
 
     private void RefreshUI()
     {
-        GetText((int)Texts.GoldText).text = Managers.Game.Character.Gold.ToString();
+        //GetText((int)Texts.GoldText).text = Managers.Game.Character.Gold.ToString();
         //GetText((int)Texts.ExpText).text =
     }
 
     private void OnClickStatusButton()
     {
+        Debug.Log("StatusButton Click");
         Managers.UI.ShowPopupUI<UIStatusPopup>();
     }
 
     private void OnClickInventoryButton()
     {
+        Debug.Log("InventoryButton Click");
         Managers.UI.ShowPopupUI<UIInventoryPopup>();
     }
 }

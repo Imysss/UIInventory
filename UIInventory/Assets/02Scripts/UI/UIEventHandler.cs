@@ -54,6 +54,7 @@ public class UIEventHandler : MonoBehaviour, IPointerClickHandler, IPointerDownH
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        _pressed = false;
         OnEndDragHandler?.Invoke(eventData);
     }
 }

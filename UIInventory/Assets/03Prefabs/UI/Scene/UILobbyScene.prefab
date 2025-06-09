@@ -1743,7 +1743,7 @@ GameObject:
   - component: {fileID: 8523572970785804210}
   - component: {fileID: 8103345566627096809}
   - component: {fileID: 4573926614864748743}
-  - component: {fileID: 6748680439563674548}
+  - component: {fileID: 2682467798560602644}
   m_Layer: 5
   m_Name: UILobbyScene
   m_TagString: Untagged
@@ -1839,7 +1839,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6748680439563674548
+--- !u!114 &2682467798560602644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1848,7 +1848,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8334661171610742203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e4e0b461950a94985da69307e7d8d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 583e487e9d41e424abee0475f1724113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8342923116752590832
