@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236780f64351a4c498b94e21024fb1b8, type: 3}
+  m_Name: Yeseul
+  m_EditorClassIdentifier: 
+  characterName: Yeseul
+  level: 999
+  exp: 0
+  description: "\uC9C0\uC0C1 \uCD5C\uAC15\uC758 \uD50C\uB808\uC774\uC5B4 \uC784\uC608\uC2AC\uC785\uB2C8\uB2E4.\t\t"
+  atk: 99999
+  def: 88888
+  hp: 77777
+  critical: 66666

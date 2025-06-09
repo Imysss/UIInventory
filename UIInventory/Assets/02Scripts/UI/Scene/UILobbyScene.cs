@@ -33,6 +33,7 @@ public class UILobbyScene : UIScene
     {
         if (base.Init() == false)
             return false;
+        Debug.Log("LobbyScene Init");
         
         BindObject(typeof(GameObjects));
         BindButton(typeof(Buttons));
@@ -55,13 +56,11 @@ public class UILobbyScene : UIScene
 
     private void OnClickStatusButton()
     {
-        Debug.Log("StatusButton Click");
         Managers.UI.ShowPopupUI<UIStatusPopup>();
     }
 
     private void OnClickInventoryButton()
     {
-        Debug.Log("InventoryButton Click");
         Managers.UI.ShowPopupUI<UIInventoryPopup>();
     }
 }

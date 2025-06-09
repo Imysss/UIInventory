@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,6 +41,6 @@ public class UIStatusPopup : UIPopup
 
     private void OnClickExitButton()
     {
-        gameObject.SetActive(false);
+        Managers.UI.ClosePopupUI(this);
     }
 }
