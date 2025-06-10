@@ -39,7 +39,7 @@ Unity 기반 UI 인벤토리 시스템을 구현한 프로젝트입니다.
 - 선택된 아이템의 상세 정보 표시
 > ![ItemInfo](./images/iteminfo.PNG)
 - 아이템 타입에 따라 버튼 (장착/해제/사용) 동적으로 표시
-> ![ItemButton](./images/itembutton.png)
+> ![ItemButton](./images/itembutton.PNG)
 - 동일 타입 장비 장착 시 기존 장비 자동 해제
 > ![ItemEquip](./images/itemequip.gif)
 - 사용 가능한 소모품이 없을 경우 Toast 메시지 출력  
