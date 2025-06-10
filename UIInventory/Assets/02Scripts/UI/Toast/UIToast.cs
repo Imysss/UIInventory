@@ -5,14 +5,9 @@ using UnityEngine;
 
 public class UIToast : UIBase
 {
-    enum Images
-    {
-        BackgroundImage
-    }
-
     enum Texts
     {
-        ToastMessageValueText
+        ToastMessageText
     }
 
     private void Awake()
@@ -30,7 +25,8 @@ public class UIToast : UIBase
         if (base.Init() == false)
             return false;
         
-        BindImage(typeof(Images));
+        Managers.UI.SetCanvas(gameObject, isToast: true);
+        
         BindText(typeof(Texts));
 
         return true;
@@ -38,7 +34,7 @@ public class UIToast : UIBase
 
     public void SetInfo(string msg)
     {
-        transform.localScale=Vector3.one;
-        GetText((int)Texts.ToastMessageValueText).text = msg;
+        transform.localScale = Vector3.one;
+        GetText((int)Texts.ToastMessageText).text = msg;
     }
 }

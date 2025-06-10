@@ -35,7 +35,7 @@ public class Inventory
         }
     }
 
-    public void RemoveItem(ItemData itemData, int amount = 1)
+    public bool RemoveItem(ItemData itemData, int amount = 1)
     {
         InventoryItem existing = items.Find(i => i.itemData == itemData);
 
@@ -45,8 +45,11 @@ public class Inventory
             if (existing.quantity <= 0)
             {
                 items.Remove(existing);
+                return true;
             }
         }
+
+        return false;
     }
 
     public void EquipItem(ItemData itemData)

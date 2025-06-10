@@ -53,6 +53,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 601be4a242eb92548ae42330c8e39cf3
+    m_Address: UIToast
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 0c86dfbd1e4f9494a812c41dd791ce85, type: 2}
   m_SchemaSet:

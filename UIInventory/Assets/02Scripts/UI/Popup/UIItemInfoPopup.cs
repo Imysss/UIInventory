@@ -94,9 +94,17 @@ public class UIItemInfoPopup : UIPopup
 
     private void OnClickUseButton()
     {
-        Managers.Game.Character.inventory.RemoveItem(_inventoryItemData.itemData);
-        (Managers.UI.SceneUI as UILobbyScene)?.UIInventoryPopup.SetInfo();
-        RefreshUI();
+        //사용 성공
+        if (Managers.Game.Character.inventory.RemoveItem(_inventoryItemData.itemData))
+        {
+            (Managers.UI.SceneUI as UILobbyScene)?.UIInventoryPopup.SetInfo();
+            RefreshUI();   
+        }
+        //사용 실패
+        else
+        {
+            Managers.UI.ShowToast("해당 아이템이 없습니다");
+        }
     }
     
     private void OnClickExitButton()
