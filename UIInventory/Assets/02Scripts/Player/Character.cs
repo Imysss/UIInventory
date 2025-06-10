@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-   //Tmp: Inventory에 들어갈 item 내용물들
-   public ItemData[] ItemDatas;
-   
    public CharacterData characterData;
    public Inventory inventory = new Inventory();
 
