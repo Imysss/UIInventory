@@ -54,10 +54,20 @@ public class Inventory
 
     public void EquipItem(ItemData itemData)
     {
-        InventoryItem item = items.Find(i => i.itemData == itemData);
-        if (item != null && !item.isEquipped && item.quantity > 0)
+        //같은 타입의 아이템이 이미 장착되어 있다면 해제
+        foreach (var item in  items)
         {
-            item.isEquipped = true;   
+            if (item.isEquipped && item.itemData.itemType == itemData.itemType)
+            {
+                item.isEquipped = false;
+                break;
+            }
+        }
+        
+        InventoryItem targetItem = items.Find(i => i.itemData == itemData);
+        if (targetItem != null && targetItem.quantity > 0)
+        {
+            targetItem.isEquipped = true;   
         }
     }
 

@@ -43,12 +43,12 @@ public class UIEventHandler : MonoBehaviour, IPointerClickHandler, IPointerDownH
 
     public void OnDrag(PointerEventData eventData)
     {
-        _pressed = true;
         OnDragHandler?.Invoke(eventData);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        _pressed = true;
         OnBeginDragHandler?.Invoke(eventData);
     }
 

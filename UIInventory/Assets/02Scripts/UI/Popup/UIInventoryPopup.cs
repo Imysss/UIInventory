@@ -45,14 +45,18 @@ public class UIInventoryPopup : UIPopup
             return;
         
         GetObject((int)GameObjects.InventoryScrollObject).DestroyChilds();
-        
+
+        int count = 0;
         //데이터 받아와서 인벤토리 추가하기
         foreach (InventoryItem data in Managers.Game.Character.inventory.items)
         {
             UIItemSlot item =
                 Managers.UI.MakeSubItem<UIItemSlot>(GetObject((int)GameObjects.InventoryScrollObject).transform);
             item.SetInfo(data);
+            count++;
         }
+
+        GetText((int)Texts.InventoryCountText).text = $"{count} / 100";
     }
 
     private void OnClickExitButton()
