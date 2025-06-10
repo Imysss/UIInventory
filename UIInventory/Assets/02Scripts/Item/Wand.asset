@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c26cad9cae529479a384ab62fd69fe, type: 3}
+  m_Name: Wand
+  m_EditorClassIdentifier: 
+  id: 50
+  itemType: 1
+  itemName: "\uB8EC\uD558\uD2B8\uC2A4\uD2F1"
+  icon: {fileID: 21300000, guid: 5fd181c05934ed74b80de60458b69f11, type: 3}
+  description: "\uC288\uAC00\uC288\uAC00\uB8EC \uC694\uC220\uBD09\uC73C\uB85C \uC694\uC220\uBD09\uC744
+    \uD754\uB4E4\uAC70\uB098 \uD2B9\uC815 \uC8FC\uBB38\uC744 \uC678\uCE58\uBA74 \uB8EC\uD558\uD2B8\uC758
+    \uD798\uC744 \uC0AC\uC6A9\uD558\uC5EC \uB9C8\uBC95\uC744 \uBC1C\uD718\uD560 \uC218
+    \uC788\uB2E4.\nAtk +100\nDef +50\nCritical +200"

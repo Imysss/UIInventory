@@ -452,6 +452,9 @@ MonoBehaviour:
     - itemData: {fileID: 11400000, guid: c92c034f5f737b24c810b16270e7c037, type: 2}
       quantity: 1
       isEquipped: 0
+    - itemData: {fileID: 11400000, guid: d3c33d930779f094996a88b1a3d50a6e, type: 2}
+      quantity: 1
+      isEquipped: 0
   level: 0
   exp: 0
   currentAtk: 0

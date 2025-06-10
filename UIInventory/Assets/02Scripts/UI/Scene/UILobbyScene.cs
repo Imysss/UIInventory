@@ -74,6 +74,7 @@ public class UILobbyScene : UIScene
         GetText((int)Texts.ExpText).text = $"{data.exp} / {Managers.Game.Character.GetRequiredExp(data.level)}";
         GetObject((int)GameObjects.ExpSlider).GetComponent<Slider>().value =
             (float)data.exp / Managers.Game.Character.GetRequiredExp(data.level);
+        GetImage((int)Images.PlayerImage).sprite = data.image;
     }
 
     private void OnClickStatusButton()

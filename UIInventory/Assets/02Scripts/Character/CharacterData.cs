@@ -11,6 +11,7 @@ public class CharacterData : ScriptableObject
     public int exp;
     [TextArea]
     public string description;
+    public Sprite image;
 
     [Header("Character Status")] 
     public int atk;

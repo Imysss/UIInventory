@@ -15,6 +15,6 @@ MonoBehaviour:
   id: 100
   itemType: 0
   itemName: "\uD68C\uBCF5 \uD3EC\uC158"
-  icon: {fileID: 21300000, guid: 82a06efe2d9883d4f9807bba9608ebba, type: 3}
+  icon: {fileID: 21300000, guid: 85573830ec524ac4a82678908a9c5e1d, type: 3}
   description: "\uC774 \uD68C\uBCF5 \uD3EC\uC158\uC744 \uC12D\uCDE8\uD558\uBA74 \uCCB4\uB825\uC774
     \uD68C\uBCF5\uB429\uB2C8\uB2E4.\nHP +100"

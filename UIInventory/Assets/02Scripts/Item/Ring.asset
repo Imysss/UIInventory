@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 10
   itemType: 1
   itemName: "\uC808\uB300 \uBC18\uC9C0"
-  icon: {fileID: 21300000, guid: 18f348779f4feae45a6195ae06cbc32e, type: 3}
+  icon: {fileID: 21300000, guid: cd62726b0e18291499836e643044303a, type: 3}
   description: "\uC81C 2\uC2DC\uB300\uC5D0 \uC0AC\uC6B0\uB860\uC5D0 \uC758\uD574
     \uC81C\uC791\uB41C \uD798\uC758 \uBC18\uC9C0 \uC911 \uD558\uB098\uB85C \uBC18\uC9C0\uB4E4
     \uC911 \uC73C\uB738\uC774\uC790 \uB098\uBA38\uC9C0 \uBC18\uC9C0\uB97C \uBAA8\uB450
