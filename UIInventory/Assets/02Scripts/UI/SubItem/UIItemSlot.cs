@@ -10,6 +10,11 @@ public class UIItemSlot : UIBase
         EquipObject
     }
 
+    enum Buttons
+    {
+        UIItemSlotButton
+    }
+
     enum Images
     {
         ItemImage
@@ -23,7 +28,10 @@ public class UIItemSlot : UIBase
             return false;
 
         BindObject(typeof(GameObjects));
+        BindButton(typeof(Buttons));
         BindImage(typeof(Images));
+        
+        GetButton((int)Buttons.UIItemSlotButton).gameObject.BindEvent(OnClickItemSlot);
         
         return true;
     }
@@ -37,10 +45,14 @@ public class UIItemSlot : UIBase
 
     private void RefreshUI()
     {
-        if (_init == false)
-            return;
-        
         GetImage((int)Images.ItemImage).sprite = _inventoryItemData.itemData.icon;
         GetObject((int)GameObjects.EquipObject).gameObject.SetActive(_inventoryItemData.isEquipped);
+    }
+
+    private void OnClickItemSlot()
+    {
+        //아이템 이름, 수량, 정보, 장착/장착해제 버튼이 적혀져 있는 아이템 창 띄우기
+        UIItemInfoPopup itemInfoPopup = Managers.UI.ShowPopupUI<UIItemInfoPopup>();
+        itemInfoPopup.SetInfo(_inventoryItemData);
     }
 }

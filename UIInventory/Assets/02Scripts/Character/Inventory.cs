@@ -48,4 +48,22 @@ public class Inventory
             }
         }
     }
+
+    public void EquipItem(ItemData itemData)
+    {
+        InventoryItem item = items.Find(i => i.itemData == itemData);
+        if (item != null && !item.isEquipped && item.quantity > 0)
+        {
+            item.isEquipped = true;   
+        }
+    }
+
+    public void UnequipItem(ItemData itemData)
+    {
+        InventoryItem item = items.Find(i => i.itemData == itemData);
+        if (item != null && item.isEquipped)
+        {
+            item.isEquipped = false;   
+        }
+    }
 }

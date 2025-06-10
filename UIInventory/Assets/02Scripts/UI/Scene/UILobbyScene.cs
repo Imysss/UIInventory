@@ -31,6 +31,11 @@ public class UILobbyScene : UIScene
     }
 
     private CharacterData data;
+    
+    private UIInventoryPopup _uiInventoryPopup;
+    public UIInventoryPopup UIInventoryPopup { get { return _uiInventoryPopup; } }
+    private UIStatusPopup _uiStatusPopup;
+    public UIStatusPopup UIStatusPopup { get { return _uiStatusPopup; } }
 
     public override bool Init()
     {
@@ -46,6 +51,11 @@ public class UILobbyScene : UIScene
 
         GetButton((int)Buttons.StatusButton).gameObject.BindEvent(OnClickStatusButton);
         GetButton((int)Buttons.InventoryButton).gameObject.BindEvent(OnClickInventoryButton);
+
+        _uiInventoryPopup = Managers.UI.ShowPopupUI<UIInventoryPopup>();
+        _uiStatusPopup = Managers.UI.ShowPopupUI<UIStatusPopup>();
+        _uiInventoryPopup.gameObject.SetActive(false);
+        _uiStatusPopup.gameObject.SetActive(false);
         
         RefreshUI();
 
@@ -54,6 +64,9 @@ public class UILobbyScene : UIScene
 
     private void RefreshUI()
     {
+        if (_init == false)
+            return;
+        
         GetText((int)Texts.NameText).text = data.characterName;
         GetText((int)Texts.LevelText).text = $"Lv. {data.level}";
         GetText((int)Texts.DescriptionText).text = data.description;
@@ -65,11 +78,11 @@ public class UILobbyScene : UIScene
 
     private void OnClickStatusButton()
     {
-        Managers.UI.ShowPopupUI<UIStatusPopup>();
+        _uiStatusPopup.gameObject.SetActive(true);
     }
 
     private void OnClickInventoryButton()
     {
-        Managers.UI.ShowPopupUI<UIInventoryPopup>();
+        _uiInventoryPopup.gameObject.SetActive(true);
     }
 }

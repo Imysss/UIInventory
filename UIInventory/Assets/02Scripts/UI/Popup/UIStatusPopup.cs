@@ -40,6 +40,9 @@ public class UIStatusPopup : UIPopup
 
     private void RefreshUI()
     {
+        if (_init == false)
+            return;
+        
         GetText((int)Texts.AtkText).text = data.atk.ToString();
         GetText((int)Texts.DefText).text = data.def.ToString();
         GetText((int)Texts.HpText).text = data.hp.ToString();
@@ -48,6 +51,6 @@ public class UIStatusPopup : UIPopup
 
     private void OnClickExitButton()
     {
-        Managers.UI.ClosePopupUI(this);
+        gameObject.SetActive(false);
     }
 }

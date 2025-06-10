@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 10
   itemType: 1
-  itemName: Ring
-  icon: {fileID: 21300000, guid: 82a06efe2d9883d4f9807bba9608ebba, type: 3}
-  description: "\uB9C8\uBC95\uC0AC\uC758 \uBC18\uC9C0"
+  itemName: "\uC808\uB300 \uBC18\uC9C0"
+  icon: {fileID: 21300000, guid: 18f348779f4feae45a6195ae06cbc32e, type: 3}
+  description: "\uC81C 2\uC2DC\uB300\uC5D0 \uC0AC\uC6B0\uB860\uC5D0 \uC758\uD574
+    \uC81C\uC791\uB41C \uD798\uC758 \uBC18\uC9C0 \uC911 \uD558\uB098\uB85C \uBC18\uC9C0\uB4E4
+    \uC911 \uC73C\uB738\uC774\uC790 \uB098\uBA38\uC9C0 \uBC18\uC9C0\uB97C \uBAA8\uB450
+    \uC9C0\uBC30\uD558\uB294 \uC720\uC77C\uD55C \uBC18\uC9C0\uC774\uB2E4.\nAtk +999\nDef
+    +999\nCritical +999"

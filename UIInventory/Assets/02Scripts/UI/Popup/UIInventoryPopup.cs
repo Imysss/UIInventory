@@ -34,11 +34,16 @@ public class UIInventoryPopup : UIPopup
         return true;
     }
 
+    public void SetInfo()
+    {
+        RefreshUI();
+    }
+
     private void RefreshUI()
     {
         if (_init == false)
             return;
-
+        
         GetObject((int)GameObjects.InventoryScrollObject).DestroyChilds();
         
         //데이터 받아와서 인벤토리 추가하기
@@ -52,6 +57,6 @@ public class UIInventoryPopup : UIPopup
 
     private void OnClickExitButton()
     {
-        Managers.UI.ClosePopupUI(this);
+        gameObject.SetActive(false);
     }
 }
