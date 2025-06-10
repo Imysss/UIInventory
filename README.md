@@ -26,7 +26,8 @@ Unity 기반 UI 인벤토리 시스템을 구현한 프로젝트입니다.
 
 ### 3. Status 화면
 - 캐릭터의 능력치, 레벨 등을 표시  
-> ![Status](./images/status.gif)
+> ![Status](./images/status1.gif)
+> ![Status](./images/status2.gif)
 
 ### 4. Inventory 화면
 - 보유 중인 아이템을 리스트로 표시
@@ -36,9 +37,9 @@ Unity 기반 UI 인벤토리 시스템을 구현한 프로젝트입니다.
 
 ### 5. Item Info 화면
 - 선택된 아이템의 상세 정보 표시
-> ![ItemInfo](./images/itemeinfo.png)
+> ![ItemInfo](./images/iteminfo.png)
 - 아이템 타입에 따라 버튼 (장착/해제/사용) 동적으로 표시
-> ![ItemButton](./images/itemebutton.png)
+> ![ItemButton](./images/itembutton.png)
 - 동일 타입 장비 장착 시 기존 장비 자동 해제
 > ![ItemEquip](./images/itemequip.gif)
 - 사용 가능한 소모품이 없을 경우 Toast 메시지 출력  
